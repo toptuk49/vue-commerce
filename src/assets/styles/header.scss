@@ -1,0 +1,50 @@
+.v-header {
+    &__container {
+        @include container;
+
+        .v-upper-header {
+            @include align-items;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(21, 21, 21, 0.05);
+            margin-bottom: 40px;
+
+            &__right-container,
+            &__left-container {
+                display: flex;
+                padding: 16px 0;
+            }
+
+            &__container-item {
+                font-weight: $regular;
+                font-size: 12px;
+                line-height: 16.34px;
+                color: $black;
+                margin-right: 33px;
+
+                .layout-link {
+                    @include link;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .v-middle-header {
+            @include align-items;
+            justify-content: space-between;
+
+            .header-logo-container {
+                .header-logo {
+                    @include img;
+
+                    .logo-icon {
+                        width: 177px;
+                        height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

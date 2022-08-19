@@ -8,7 +8,7 @@ const srcFolder = `./gulp-src`;
 export const path = {
     build: {
         images: `${buildFolder}/img/`,
-        fonts: `${buildFolder}/fonts/`,
+        fonts: `public/fonts/`,
         files: `${buildFolder}/files/`
     },
     src: {

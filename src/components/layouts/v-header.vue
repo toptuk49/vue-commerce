@@ -1,20 +1,31 @@
 <template>
     <div class="v-header">
-        <v-header-upper />
+        <div class="v-header__container">
+            <v-upper-header />
+
+            <div class="v-middle-header">
+                <div class="header-logo-container">
+                    <a href="#" class="header-logo">
+                        <img src="../../assets/img/icons/icons.svg#logo" class="logo-icon" alt="logo"/>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
     </div>
 </template>
 
 <script>
-    import vHeaderUpper from './header/v-header-upper'
+    import vUpperHeader from './header/v-upper-header'
 
     export default {
         name: 'v-header',
         components: {
-            vHeaderUpper
+            vUpperHeader
         }
     }
 </script>
 
 <style lang="scss" scoped>
-
+    .v-header {}
 </style>
