@@ -1,4 +1,19 @@
 // Миксины
+@mixin full-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin j-content {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin align-items {
+    display: flex;
+    align-items: center;
+}
 
 // Переменные
 $white: #fff;
@@ -7,9 +22,23 @@ $gray: #A9A9A9;
 $light-gray: #F5F5F5;
 $dark-gray: #575757;
 $green: #6A983C;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
 
 // Шрифты
+@import "fonts";
 
 // Общие стили
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+}
 
 // Импорты

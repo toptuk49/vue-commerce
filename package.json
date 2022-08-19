@@ -2,10 +2,13 @@
   "name": "vue-commerce",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "svgSprive": "gulp svgSprive",
+    "zip": "gulp deployZIP --build"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -24,7 +27,18 @@
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "sass": "^1.32.7",
-    "sass-loader": "^12.0.0"
+    "sass-loader": "^12.0.0",
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-fonter": "^0.3.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-webp": "^4.0.1",
+    "gulp-zip": "^5.1.0"
   },
   "eslintConfig": {
     "root": true,
